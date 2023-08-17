@@ -1,0 +1,98 @@
+.body {
+  margin: 0;
+  background: linear-gradient(to right, rgb(173, 158, 135), teal);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  border-style: outset;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: lightslategray;
+  box-shadow: rgb(73, 72, 72) 5px 10px 10px;
+  border-color: grey;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.rulesList,
+#rules {
+  background-color: teal;
+  color: navajowhite;
+}
+li {
+  text-align: left;
+}
+h1 {
+  color: navajowhite;
+  border-bottom-style: dotted;
+  border-color: black;
+}
+.quizBoxContainer {
+  background-color: teal;
+  color: navajowhite;
+  border-style: outset;
+  border-color: grey;
+  box-shadow: rgb(73, 72, 72) 5px 10px 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+}
+#quizBox {
+  background-color: teal;
+  color: navajowhite;
+  border-style: dotted;
+  border-color: black;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 250px;
+  width: 900px;
+}
+
+.leaderBoardBox {
+  background-color: teal;
+  color: navajowhite;
+  border-style: outset;
+  border-color: grey;
+  box-shadow: rgb(73, 72, 72) 5px 10px 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  height: 70px;
+}
+
+.footer {
+  border-style: solid;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(23, 22, 22);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 10px;
+}
+#footerText {
+  color: navajowhite;
+  text-align: center;
+}
+.btn {
+  border-style: solid;
+  border-color: black;
+  color: navajowhite;
+  background-color: rgb(23, 22, 22);
+}
+.btn:hover {
+  color: grey;
+}
