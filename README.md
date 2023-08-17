@@ -7,3 +7,25 @@ Week 4's Homework assignment, Creating a word puzzle game using javascript and i
 (these elements were defined in the html and style.css sheet using #ID and .Class Tags)
 -Website Layout is complete, moving forward all that needs to be completed is the JavaScript Elements to play the game, as well as whatever is necessary Web-API wise (TUTORING SESSION SOON) 
 - We have also created a "Leaderboard Box" where the stats will be stored as to who is playing and their score in real time (hopefully)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.proprofs.com/quiz-school/story.php?title=computer-programming-ii-exam-multiple-choice 
+
+(MULTIPLE CHOICE QUESTIONS CAME FROM THIS WEBSITE^^^^^)
+
+
+https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+
+(INNER HTML EXPLENATION AND IMPLEMENTATION CAME FROM HERE + YOUTUBE_)
