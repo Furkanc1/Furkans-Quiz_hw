@@ -57,14 +57,24 @@ var currentQuestion = questionsArr[currentQuestionIndexNumber];
 
 function displayQuestion() {
   if (currentQuestionIndexNumber < questionsArr.length) {
-    document.getElementById("#quizBox").innerHTML = 
-    "<h4>" + currentQuestion.questionText + "</h4>"
-    
-    
+    var quizBox = document.getElementById("quizBox");
 
-    
+    var questionText = "<h4>" + currentQuestion.questionText + "</h4>";
+
+    var answerButtons = currentQuestion.questionAnswers.map(function(answer, index) {
+      var button = '<button class="answer-btn" data-answer="' + answer + '">' + answer + '</button>';
+      var listItem = '<li id="hello">' + button + '</li>';
+
+      return listItem;
+    });
+
+    var answersHTML = "<ul>" + answerButtons.join('') + "</ul>";
+
+    quizBox.innerHTML = questionText + answersHTML;
   }
 }
+
+
 
 
 
