@@ -22,12 +22,30 @@ is correct or incorrect
 
 
 
+## FINAL COMMIT
+
+
+I cant make the questions switch once an answer is pressed, not sure what im doing wrong or how to fix it at all
+
+I dont know how to make the scoreboard appear, as ive been stuck on this issue so i havent even gotten to the final portion of the assignment
+
+With some feedback i may be able to complete it but if not this is what I got.
 
 
 
 
 
 
+
+
+
+
+
+ ** USED OPENAI TO DEFINE TERMS AND CODE FOUND OFF OF FULLSTACK/CODING WEBSITE I COULD NOT UNDERSTAND VIA MY KNOWLEDGE + NOTES **
+ ** USED OPENAI FOR SUPPORT ON "EVENTLISTENER" FOR THE CLICK EVENT ON THE ANSWERS IN ORDER TO MOVE ONTO NEXT ANSWER **
+  (LAST PART OF THE ASSIGNMENT I NEEDED BEFORE IT WAS COMPLETE (HAVE BEEN STUCK FOR A FEW DAYS ON IT))
+ (p.s. Tutor session used up to start the homework and office hours helped a little but not enough for me to complete my code)
+ (ex: .join, .map, innerHTML, etc.)
 
 https://www.proprofs.com/quiz-school/story.php?title=computer-programming-ii-exam-multiple-choice 
 

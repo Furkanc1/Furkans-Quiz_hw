@@ -1,6 +1,8 @@
 var startBtn = document.querySelector("#start-btn");
 var timerEl = document.querySelector("#timer");
 
+var answerSelect = document.querySelector("#quizBox");
+
 var timeLeft = 75;
 var currentQuestionIndexNumber = 0;
 var score = 0;
@@ -70,16 +72,12 @@ function displayQuestion() {
   // if the currentindexnumber is less than 5, then -->
   if (currentQuestionIndexNumber < questionsArr.length) {
     //definining the variables inside the function so they are only used INSIDE the function
-    var quizBox = document.getElementById("quizBox");
 
     var questionText = "<h4>" + currentQuestion.questionText + "</h4>";
 
     //wraps the question in h4 tags
 
-    var answerButtons = currentQuestion.questionAnswers.map(function (
-      answer,
-      index
-    ) {
+    var answerButtons = currentQuestion.questionAnswers.map(function (answer) {
       var button =
         '<button class="answer-btn" data-answer="' +
         answer +
@@ -106,9 +104,9 @@ function checkAnswer(userAnswer) {
   var currentQuestion = questionsArr[currentQuestionIndexNumber];
   //labels the current index that we are on in the questionsARRAY//
   if (userAnswer === currentQuestion.rightAnswer) {
-    score + 10; //adds 10 points to our score variable//
+    score += 10; //adds 10 points to our score variable//
   } else {
-    timeLeft - 10; //subtracts 10 seconds from the timeLeft variable//
+    timeLeft -= 10; //subtracts 10 seconds from the timeLeft variable//
   }
   currentQuestionIndexNumber++;
   //adds 1 to our index number, meaning we move onto the next questions in the ARRAY //
@@ -121,10 +119,24 @@ function endQuiz() {
   clearInterval(countdown);
   console.log("Quiz Over");
 
-  // Hide Questions and show LEADERBOARD (No Clue) //
+  // Hide Questions and show LEADERBOARD (No Clue)
 }
 
 startBtn.addEventListener("click", function () {
   console.log("Quiz Start");
   startQuiz();
+});
+
+// answerSelect.addEventListener('click', function() {
+// checkAnswer();
+// }); //commented out, but was original start to eventlistener(below)//
+
+answerSelect.addEventListener("click", function (event) {
+  console.log("Clicked element class:", event.target.className);
+  if (event.target.className.includes("answer-btn")) {
+    console.log("Answer button clicked!");
+    var selectedAnswer = event.target.getAttribute("data-answer");
+    console.log("Selected answer:", selectedAnswer);
+    checkAnswer(selectedAnswer);
+  }
 });
