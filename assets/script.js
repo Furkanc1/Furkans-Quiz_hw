@@ -49,6 +49,11 @@ var questionsArr = [
   },
 ];
 
+for (var i = 0; i < questionsArr.length, i++;) {
+  
+  displayQuestion()
+}
+
 function startQuiz() {
   startBtn.hidden = true;
   quizBox.textContent = "";
@@ -101,7 +106,7 @@ function displayQuestion() {
 }
 
 function checkAnswer(userAnswer) {
-  var currentQuestion = questionsArr[currentQuestionIndexNumber];
+  currentQuestion = questionsArr[currentQuestionIndexNumber];
   //labels the current index that we are on in the questionsARRAY//
   if (userAnswer === currentQuestion.rightAnswer) {
     score += 10; //adds 10 points to our score variable//
@@ -131,12 +136,4 @@ startBtn.addEventListener("click", function () {
 // checkAnswer();
 // }); //commented out, but was original start to eventlistener(below)//
 
-answerSelect.addEventListener("click", function (event) {
-  console.log("Clicked element class:", event.target.className);
-  if (event.target.className.includes("answer-btn")) {
-    console.log("Answer button clicked!");
-    var selectedAnswer = event.target.getAttribute("data-answer");
-    console.log("Selected answer:", selectedAnswer);
-    checkAnswer(selectedAnswer);
-  }
-});
+answerSelect.addEventListener("click", checkAnswer);
