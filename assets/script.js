@@ -75,7 +75,7 @@ var currentQuestion = questionsArr[currentQuestionIndexNumber];
 
 function displayQuestion() {
   // if the currentindexnumber is less than 5, then -->
-  if (currentQuestionIndexNumber < questionsArr.length) {
+  if (currentQuestionIndexNumber <= questionsArr.length) {
     //definining the variables inside the function so they are only used INSIDE the function
 
     var questionText = "<h4>" + currentQuestion.questionText + "</h4>";
